@@ -10,7 +10,7 @@ GCP services used:
 
 ## GCP architecture
 
-![gambar GCP architecture](gcp-architecture.png)
+![gambar GCP architecture](gcp-architecture.jpg)
   
 ## Set environment variables and enable services
 
@@ -93,12 +93,6 @@ gcloud app deploy
 ```
 
   2. choice region.
-
-  3. Show App engine service URL.
-
-```
-
-```
 
 ## Flask With Cloud Run
 
