@@ -80,7 +80,7 @@ gcloud sql instances describe elektronio-sql \
     git clone https://github.com/Bangkit-2023-Capstone-Team-C23-PS060/Cloud-Computing.git
     ```
        
-    2. Replace <public ip instance sql> with with the previous SQL instance IP in database.js.
+    2. Replace <> with with the previous SQL instance IP in database.js.
   
 
 - in gcp
@@ -98,7 +98,7 @@ gcloud app deploy
 
 - In local
 
-  1. Replace <public ip instance sql> with with the previous SQL instance IP in main.py.
+  1. Replace <> with with the previous SQL instance IP in main.py.
   
 - In gcp
 Build and push Docker image.
