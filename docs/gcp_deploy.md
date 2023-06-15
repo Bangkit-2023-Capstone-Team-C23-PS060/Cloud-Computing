@@ -77,22 +77,36 @@ gcloud sql instances describe elektronio-sql \
     1. Clone project repo from GitHub.
 
     ```
-    git clone 
+    git clone https://github.com/Bangkit-2023-Capstone-Team-C23-PS060/Cloud-Computing.git
     ```
        
-    2. Replace <> with with the previous SQL instance IP in database.js.
+    2. Replace <public ip instance sql> with with the previous SQL instance IP in database.js.
   
-    3. Deploy ke App engine
 
-    ```
+- in gcp
 
-    ```
-    
-- in gcp 
+  1. Deploy to App engine.
+  
+```
+cd Cloud-Computing
+gcloud app deploy 
+```
+
+  2. choice region.
+
+  3. Show App engine service URL.
+
+```
+
 ```
 
 ## Flask With Cloud Run
 
+- In local
+
+  1. Replace <public ip instance sql> with with the previous SQL instance IP in main.py.
+  
+- In gcp
 Build and push Docker image.
 ```
 cd flaskdeploy
