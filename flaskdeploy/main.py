@@ -25,7 +25,7 @@ def predict_label(img):
 def get_component_data(name):
     try:
         mydb = mysql.connector.connect(
-            host="34.101.41.87",
+            host="<public ip instance sql>",
             user="root",
             password="elektronio",
             database="elektronio"
