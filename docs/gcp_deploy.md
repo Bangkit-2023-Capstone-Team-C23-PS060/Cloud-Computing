@@ -85,14 +85,14 @@ gcloud sql instances describe elektronio-sql \
 
 - in gcp
 
-  1. Deploy to App engine.
+    1. Deploy to App engine.
   
-```
-cd Cloud-Computing
-gcloud app deploy 
-```
+    ```
+    cd Cloud-Computing
+    gcloud app deploy 
+    ```
 
-  2. choice region.
+    2. choice region.
 
 ## Flask With Cloud Run
 
