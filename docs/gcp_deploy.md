@@ -45,8 +45,10 @@ gsutil mb -l asia-southeast2 -b on gs://<replace with unique name for save mysql
      --cpu=2 \
      --memory=4GB \
      --region=$REGION \
-     --root-password=elektronio
-   
+     --root-password=elektronio \
+     --assign-ip \
+     --authorized-networks=0.0.0.0/0
+   ```
 3. Create database.
 
 ```
