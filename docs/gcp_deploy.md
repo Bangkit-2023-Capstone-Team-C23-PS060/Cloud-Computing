@@ -101,11 +101,27 @@ gcloud sql instances describe elektronio-sql \
 - In local
 
   1. Replace <> with with the previous SQL instance IP in main.py.
+     
+  2. Build and push Docker image.
+
+  ```
+  cd flaskdeploy
+  docker build -t gcr.io/$PROJECT_ID/project-ml:v1 .
+  docker push gcr.io/$PROJECT_ID/project-ml:v1
+  ```
   
 - In gcp
-Build and push Docker image.
-```
-cd flaskdeploy
-docker build -t gcr.io/$PROJECT_ID/project-ml:v1 .
-docker push gcr.io/$PROJECT_ID/project-ml:v1
-```
+
+  1. Deploy to Cloud Run.
+
+  ```
+  gcloud beta run deploy elektronio\
+    --image=asia-southeast2-docker.pkg.dev/$PROJECT_ID/project-ml:v1 \
+    --region=$REGION \
+    --cpu=4 \
+    --memory=8Gi \
+    --min-instances=1 \
+    --max-instances=4 \
+    --port=8080 \
+    --execution-environment=gen2 \
+  ```
